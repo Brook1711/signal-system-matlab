@@ -1,0 +1,14 @@
+%信号课本6-31
+w=-3*pi:0.01:3*pi;
+H1=power(1.25-cos(w),-0.5);
+A1=atan2(-sin(w),(2-cos(w)));
+H2=power(1.25+cos(w),-0.5);
+A2=atan2(sin(w),(2+cos(w)));
+subplot(2,2,1);
+plot(w,H1);xlabel('w');ylabel('Hb');
+subplot(2,2,2);
+plot(w,A1);xlabel('w');ylabel('Ab');
+subplot(2,2,3);
+plot(w,H2);xlabel('w');ylabel('Hc');
+subplot(2,2,4);
+plot(w,A2);xlabel('w');ylabel('Ac');

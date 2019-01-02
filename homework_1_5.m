@@ -1,0 +1,9 @@
+%习题一第四题
+t=-2*pi:0.01:2*pi;
+f1=cos(t);
+f2=cos(20*t);
+f3=f1.*f2;
+subplot(2,1,1);
+plot(t,f1,t,f2);xlabel('t');ylabel('cos(t)&cos(20t)');
+subplot(2,1,2);
+plot(t,f3);xlabel('t');ylabel('cos(t)*cos(20t)');
